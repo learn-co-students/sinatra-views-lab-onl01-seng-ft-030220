@@ -1,7 +1,15 @@
 class App < Sinatra::Base
 
-	get '/' do
-		erb :index
+	get '/hello' do
+		200
+	end
+	
+	get '/goodbye' do
+		"Goodbye Joe"
+	end
+
+	get '/date' do
+		"The date is Friday, April 10, 2020"
 	end
 
 
